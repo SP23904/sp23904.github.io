@@ -19,18 +19,11 @@ h1{margin:0;font-size:38px;line-height:1.2;letter-spacing:-1.5px;font-weight:600
 </style>
 </head>
 <body>
-<div class="corner"><span>✦</span> PERSONAL SPACE</div><div class="edition">01 / BIO</div>
 <main>
 <div class="avatar"><img src="avatar.gif" alt="Daffy Duck burning money" width="104" height="104"></div>
 <section class="card" aria-labelledby="name">
 <h1 class="handle" id="name">@sp23904</h1>
 </section>
 </main>
-<button class="share" type="button" aria-label="Copy profile link" title="Copy profile link"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 13 4-4m-6 6-1 1a4 4 0 0 1-6-6l4-4a4 4 0 0 1 6 0m2 2 1-1a4 4 0 0 1 6 6l-4 4a4 4 0 0 1-6 0" transform="translate(1 1)"/></svg></button>
-<div class="toast" role="status" aria-live="polite"></div>
-<script>
-const share=document.querySelector('.share');const toast=document.querySelector('.toast');let timer;
-share.addEventListener('click',async()=>{clearTimeout(timer);try{await navigator.clipboard.writeText(location.origin + location.pathname);toast.textContent='Profile link copied';}catch{toast.textContent='Copy the URL from your address bar';}timer=setTimeout(()=>toast.textContent='',3000);});
-</script>
 </body>
 </html>
